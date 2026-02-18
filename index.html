@@ -9,25 +9,38 @@
 <body>
     <header>
         <nav>
-            <a href="index.html">HOME</a> | 
-            <a href="about.html">ABOUT US</a> | 
-            <a href="daily-offer.html">DAILY OFFER</a> | 
+            <a href="index.html">HOME</a> |
+            <a href="about.html">ABOUT US</a> |
+            <a href="daily-offer.html">DAILY OFFER</a> |
             <a href="contact.html">CONTACT US</a>
         </nav>
         <h1>The good breakfast</h1>
         <p>Here you will find all sorts of delicious treats</p>
     </header>
     <main>
+        <figure>
+            <img 
+                src="https://i.postimg.cc/htxcJGB6/ZKkCecn.jpg" 
+                alt="Urban Toast breakfast"
+            >
+            <figcaption>powered by biscuit.</figcaption>
+        </figure>
         <section>
-            <img src="https://i.postimg.cc/htxcJGB6/ZKk-Cecn.jpg">
-            <label for="toast">powered by biscuit.</label>
-            <p>Our commitment is to use impeccable sourcing and <strong>quality ingredients</strong> to help you code.An ongoing collaboration between the classroom staff and the development team allow us to iterate our content and give our students the coding 'fruits and vegetables' -mainly made of JavaScript- that they need to grow as a healthy developer.</p>
-            <blockquote>
-                <p>Good code & good coffee, everyday</p>
-            </blockquote>
+            <p>
+                Our commitment is to use impeccable sourcing and 
+                <strong>quality ingredients</strong> to help you code. 
+                An ongoing collaboration between the classroom staff and 
+                the development team allow us to iterate our content and 
+                give our students the coding 'fruits and vegetables' 
+                -mainly made of JavaScript- that they need to grow as a 
+                healthy developer.
+            </p>
         </section>
+        <blockquote>
+            Good code &amp; good coffee, everyday
+        </blockquote>
         <section>
-            <h2>Our menu</h2>
+            <h2>Our Menu</h2>
             <table>
                 <thead>
                     <tr>
@@ -49,12 +62,39 @@
                         <td>Rooibos</td>
                     </tr>
                     <tr>
-                        <td>Capuccino</td></tr>
+                        <td>Capuccino</td>
+                        <td></td>
+                    </tr>
+                </tbody>
             </table>
+        </section>
+        <section>
+            <h2>Reservas Aquí</h2>
+            <form action="#" method="post">
+                <label for="name">Nombre del cliente:</label>
+                <input type="text" id="name" name="name">
+                <label for="meal">Tipo:</label>
+                <select id="meal" name="meal">
+                    <option value="snack">Snack</option>
+                    <option value="breakfast">Breakfast</option>
+                </select>
+                <label for="people">Número de personas:</label>
+                <select id="people" name="people">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+                <button type="submit">Enviar</button>
+            </form>
         </section>
     </main>
     <footer>
         <p>From the oven with love</p>
+        <a href="mailto:hello@urbantoast.com">Contact Us</a>
+        <address>
+            Opening hours: Mon–Fri 8:00–18:00, Sat–Sun 9:00–15:00
+        </address>
     </footer>
 </body>
 </html>
