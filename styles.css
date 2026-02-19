@@ -57,19 +57,16 @@ main {
     margin-bottom: 25px;
 }
 
-#photo img {
+#photo iframe {
     width: 100%;
-    max-width: 600px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 6px;
+    height: 400px;
     display: block;
     margin: 0 auto;
 }
 
 figcaption {
     color: #888;
-    font-size: 0.85rem;
+    font-size: 18px;
     font-style: italic;
     margin-top: 8px;
 }
@@ -80,7 +77,6 @@ figcaption {
     margin-bottom: 20px;
 }
 
-/* === ЦИТАТА === */
 blockquote {
     padding: 15px 20px;
     margin: 25px 0;
