@@ -10,34 +10,45 @@ body {
 }
 
 header {
-    background-color: #F5F0E8;
+    background-color: #f5f0e8;
     text-align: center;
     padding: 20px;
 }
 
-header p {
-    color: #9A3531;
-}
-
-header h1 {
-    color: #222;
-    margin-bottom: 10px;
-}
-
 nav {
     background-color: #9A3531;
+    color: white;
     padding: 10px 20px;
     margin-bottom: 20px;
 }
 
 nav a {
-    color: #F5F0E8;
+    text-decoration: none;
+    color: white;
     font-size: 14px;
     letter-spacing: 1px;
 }
 
+nav a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 40px;
+    color: #9A3531;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #666;
+    font-style: italic;
+}
+
 main {
-    width: 80%;
+    max-width: 800px;
+    width: 90%;
+    margin: 30px auto;
+    background-color: #f5f0e8;
     padding: 30px;
 }
 
@@ -51,6 +62,112 @@ main {
     max-width: 600px;
     height: 300px;
     object-fit: cover;
+    border-radius: 6px;
     display: block;
     margin: 0 auto;
+}
+
+figcaption {
+    color: #888;
+    font-size: 0.85rem;
+    font-style: italic;
+    margin-top: 8px;
+}
+
+#description p {
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* === ЦИТАТА === */
+blockquote {
+    padding: 15px 20px;
+    margin: 25px 0;
+    font-style: italic;
+    font-size: 20px;
+    color: #555;
+    background-color: #ede8df;
+    text-align: right;
+    border-right: 4px solid #9A3531;
+}
+
+#menu {
+    margin: 25px 0;
+}
+
+h2 {
+    color: #9A3531;
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #9A3531;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+}
+
+td {
+    padding: 8px 15px;
+    border-bottom: 1px solid #9A3531;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #444;
+}
+
+input,
+select {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+}
+
+
+button[type="submit"] {
+    background-color: #9A3531;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #7a2a27;
+}
+
+footer {
+    background-color: #f5f0e8;
+    text-align: center;
+    padding: 20px;
+    color: #555;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+}
+
+footer a {
+    color: #9A3531;
+    font-weight: bold;
+}
+
+footer address {
+    font-style: normal;
+    font-size: 15px;
 }
